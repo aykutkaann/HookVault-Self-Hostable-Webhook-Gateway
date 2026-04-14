@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HookVault.Infrastructure.DTOs
+namespace HookVault.Application.DTOs
 {
 
     public sealed record EndpointDto(Guid Id, Guid SourceId, string Slug, string DestinationUrls, bool IsActive,
