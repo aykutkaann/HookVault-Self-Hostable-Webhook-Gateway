@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/HookVault.Application/HookVault.Application.csproj" />
+    <Project Path="src/HookVault.Dashboard/HookVault.Dashboard.csproj" />
+    <Project Path="src/HookVault.Domain/HookVault.Domain.csproj" />
+    <Project Path="src/HookVault.Infrastructure/HookVault.Infrastructure.csproj" />
+    <Project Path="src/HookVault.Server/HookVault.Server.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/HookVault.ArchTests/HookVault.ArchTests.csproj" />
+    <Project Path="tests/HookVault.IntegrationTests/HookVault.IntegrationTests.csproj" />
+    <Project Path="tests/HookVault.UnitTests/HookVault.UnitTests.csproj" />
+  </Folder>
+</Solution>
