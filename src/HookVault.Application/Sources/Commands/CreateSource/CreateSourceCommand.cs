@@ -9,7 +9,7 @@ using HookVault.Application.Abstractions.Messaging;
 
 namespace HookVault.Application.Sources.Commands.CreateSource
 {
-    public  record class CreateSourceCommand(string Name, SignatureAlgorithm Algorithm,
+    public sealed record class CreateSourceCommand(string Name, SignatureAlgorithm Algorithm,
         string? SignatureHeaderName, string? SigningSecret) : ICommand<SourceDto>;
     
     
