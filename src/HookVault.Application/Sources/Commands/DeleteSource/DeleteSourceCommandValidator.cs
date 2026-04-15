@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HookVault.Application.Sources.Commands.DeleteSource
 {
-    public class DeleteSourceCommandValidator: AbstractValidator<DeleteSourceCommand>
+    public sealed class DeleteSourceCommandValidator: AbstractValidator<DeleteSourceCommand>
     {
         public DeleteSourceCommandValidator()
         {

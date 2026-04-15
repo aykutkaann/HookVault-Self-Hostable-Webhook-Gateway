@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HookVault.Application.Sources.Commands.UpdateSource
 {
-    public class UpdateSourceCommandValidator :AbstractValidator<UpdateSourceCommand>
+    public sealed class UpdateSourceCommandValidator :AbstractValidator<UpdateSourceCommand>
     {
 
         public UpdateSourceCommandValidator()

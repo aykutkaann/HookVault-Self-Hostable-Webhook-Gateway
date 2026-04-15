@@ -1,3 +1,4 @@
+using HookVault.Domain.Entities;
 using HookVault.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,15 @@ namespace HookVault.Application.DTOs
         string SignatureHeaderName,
         SignatureAlgorithm Algorithm,
         bool HasSigningSecret,
-        DateTime CreatedAt);
+        DateTime CreatedAt)
+    {
+        public static SourceDto FromEntity(Source source) =>
+            new(
+                source.Id,
+                source.Name,
+                source.SignatureHeaderName,
+                source.Algorithm,
+                !string.IsNullOrWhiteSpace(source.SigningSecret),
+                source.CreatedAt);
+    }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HookVault.Application.Sources.Commands.CreateSource
 {
-    public  class CreateSourceCommandValidator :AbstractValidator<CreateSourceCommand>
+    public  sealed  class CreateSourceCommandValidator :AbstractValidator<CreateSourceCommand>
     {
         public CreateSourceCommandValidator()
         {
